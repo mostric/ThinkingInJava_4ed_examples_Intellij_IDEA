@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13b7309-bb43-439f-89f7-56761fe3a190" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Ruslan\IdeaProjects\Abra\.idea\libraries\apt_mirror_api_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ruslan\IdeaProjects\Abra\.idea\libraries\javassist_3_9_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ruslan\IdeaProjects\Abra\.idea\libraries\swt.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ruslan\IdeaProjects\Abra\.idea\libraries\xom_1_2_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ruslan\IdeaProjects\Abra\lib\javassist-3.9.0.GA.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TiJ_Examples(4th_ed).eml" afterPath="$PROJECT_DIR$/TiJ_Examples(4th_ed).eml" />
+    <list default="true" id="a13b7309-bb43-439f-89f7-56761fe3a190" name="Default" comment="updated all">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Abra.iws" />
@@ -43,8 +37,8 @@
       <file leaf-file-name="uiDesigner.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.10691824">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -984,8 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.10691824">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
