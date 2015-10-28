@@ -18,6 +18,12 @@ class NullRobotProxyHandler implements InvocationHandler {
         nullName = type.getSimpleName() + " NullRobot";
     }
 
+    public Object invoke(
+            Object proxy, Method method, Object[] args)
+            throws Throwable {
+        return method.invoke(proxied, args);
+    }
+
     private class NRobot implements Null, Robot {
         public String name() {
             return nullName;
@@ -30,12 +36,6 @@ class NullRobotProxyHandler implements InvocationHandler {
         public List<Operation> operations() {
             return Collections.emptyList();
         }
-    }
-
-    public Object invoke(
-            Object proxy, Method method, Object[] args)
-            throws Throwable {
-        return method.invoke(proxied, args);
     }
 }
 

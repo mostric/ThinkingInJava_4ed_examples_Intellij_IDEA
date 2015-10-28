@@ -2,7 +2,7 @@
 // A Map filled with data using a generator object.
 package net.mindview.util;
 
-import java.util.*;
+import java.util.LinkedHashMap;
 
 public class MapData<K, V> extends LinkedHashMap<K, V> {
     // A single Pair Generator:

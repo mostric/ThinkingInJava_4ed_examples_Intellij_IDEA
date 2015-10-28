@@ -1,8 +1,14 @@
 //: polymorphism/shape/Square.java
 package polymorphism.shape;
-import static net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class Square extends Shape {
-  public void draw() { print("Square.draw()"); }
-  public void erase() { print("Square.erase()"); }
+    public void draw() {
+        print("Square.draw()");
+    }
+
+    public void erase() {
+        print("Square.erase()");
+    }
 } ///:~

@@ -1,30 +1,32 @@
 //: net/mindview/util/Hex.java
 package net.mindview.util;
-import java.io.*;
+
+import java.io.File;
 
 public class Hex {
-  public static String format(byte[] data) {
-    StringBuilder result = new StringBuilder();
-    int n = 0;
-    for(byte b : data) {
-      if(n % 16 == 0)
-        result.append(String.format("%05X: ", n));
-      result.append(String.format("%02X ", b));
-      n++;
-      if(n % 16 == 0) result.append("\n");
+    public static String format(byte[] data) {
+        StringBuilder result = new StringBuilder();
+        int n = 0;
+        for (byte b : data) {
+            if (n % 16 == 0)
+                result.append(String.format("%05X: ", n));
+            result.append(String.format("%02X ", b));
+            n++;
+            if (n % 16 == 0) result.append("\n");
+        }
+        result.append("\n");
+        return result.toString();
     }
-    result.append("\n");
-    return result.toString();
-  }
-  public static void main(String[] args) throws Exception {
-    if(args.length == 0)
-      // Test by displaying this class file:
-      System.out.println(
-        format(BinaryFile.read("Hex.class")));
-    else
-      System.out.println(
-        format(BinaryFile.read(new File(args[0]))));
-  }
+
+    public static void main(String[] args) throws Exception {
+        if (args.length == 0)
+            // Test by displaying this class file:
+            System.out.println(
+                    format(BinaryFile.read("Hex.class")));
+        else
+            System.out.println(
+                    format(BinaryFile.read(new File(args[0]))));
+    }
 } /* Output: (Sample)
 00000: CA FE BA BE 00 00 00 31 00 52 0A 00 05 00 22 07
 00010: 00 23 0A 00 02 00 22 08 00 24 07 00 25 0A 00 26

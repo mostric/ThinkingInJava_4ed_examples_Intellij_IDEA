@@ -1,13 +1,18 @@
 //: typeinfo/SnowRemovalRobot.java
 package typeinfo; /* Added by Eclipse.py */
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class SnowRemovalRobot implements Robot {
     private String name;
 
     public SnowRemovalRobot(String name) {
         this.name = name;
+    }
+
+    public static void main(String[] args) {
+        Robot.Test.test(new SnowRemovalRobot("Slusher"));
     }
 
     public String name() {
@@ -48,10 +53,6 @@ public class SnowRemovalRobot implements Robot {
                     }
                 }
         );
-    }
-
-    public static void main(String[] args) {
-        Robot.Test.test(new SnowRemovalRobot("Slusher"));
     }
 } /* Output:
 Robot name: Slusher

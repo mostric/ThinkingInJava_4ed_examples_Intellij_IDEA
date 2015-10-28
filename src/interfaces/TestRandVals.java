@@ -1,14 +1,15 @@
 //: interfaces/TestRandVals.java
 package interfaces; /* Added by Eclipse.py */
-import static net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class TestRandVals {
-  public static void main(String[] args) {
-    print(RandVals.RANDOM_INT);
-    print(RandVals.RANDOM_LONG);
-    print(RandVals.RANDOM_FLOAT);
-    print(RandVals.RANDOM_DOUBLE);
-  }
+    public static void main(String[] args) {
+        print(RandVals.RANDOM_INT);
+        print(RandVals.RANDOM_LONG);
+        print(RandVals.RANDOM_FLOAT);
+        print(RandVals.RANDOM_DOUBLE);
+    }
 } /* Output:
 8
 -32032247016559954

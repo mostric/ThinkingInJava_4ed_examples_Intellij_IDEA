@@ -1,11 +1,12 @@
 //: arrays/RandomGeneratorsTest.java
 package arrays; /* Added by Eclipse.py */
-import net.mindview.util.*;
+
+import net.mindview.util.RandomGenerator;
 
 public class RandomGeneratorsTest {
-  public static void main(String[] args) {
-    GeneratorsTest.test(RandomGenerator.class);
-  }
+    public static void main(String[] args) {
+        GeneratorsTest.test(RandomGenerator.class);
+    }
 } /* Output:
 Double: 0.73 0.53 0.16 0.19 0.52 0.27 0.26 0.05 0.8 0.76
 Float: 0.53 0.16 0.53 0.4 0.49 0.25 0.8 0.11 0.02 0.8

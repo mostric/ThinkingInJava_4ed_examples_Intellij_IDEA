@@ -1,25 +1,29 @@
 //: arrays/GeneratorsTest.java
 package arrays; /* Added by Eclipse.py */
-import net.mindview.util.*;
+
+import net.mindview.util.CountingGenerator;
+import net.mindview.util.Generator;
 
 public class GeneratorsTest {
-  public static int size = 10;
-  public static void test(Class<?> surroundingClass) {
-    for(Class<?> type : surroundingClass.getClasses()) {
-      System.out.print(type.getSimpleName() + ": ");
-      try {
-        Generator<?> g = (Generator<?>)type.newInstance();
-        for(int i = 0; i < size; i++)
-          System.out.printf(g.next() + " ");
-        System.out.println();
-      } catch(Exception e) {
-        throw new RuntimeException(e);
-      }
+    public static int size = 10;
+
+    public static void test(Class<?> surroundingClass) {
+        for (Class<?> type : surroundingClass.getClasses()) {
+            System.out.print(type.getSimpleName() + ": ");
+            try {
+                Generator<?> g = (Generator<?>) type.newInstance();
+                for (int i = 0; i < size; i++)
+                    System.out.printf(g.next() + " ");
+                System.out.println();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
-  }
-  public static void main(String[] args) {
-    test(CountingGenerator.class);
-  }
+
+    public static void main(String[] args) {
+        test(CountingGenerator.class);
+    }
 } /* Output:
 Double: 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0
 Float: 0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0

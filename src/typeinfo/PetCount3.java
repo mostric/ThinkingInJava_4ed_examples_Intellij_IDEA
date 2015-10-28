@@ -14,6 +14,16 @@ import static net.mindview.util.Print.print;
 import static net.mindview.util.Print.printnb;
 
 public class PetCount3 {
+    public static void main(String[] args) {
+        PetCounter petCount = new PetCounter();
+        for (Pet pet : Pets.createArray(20)) {
+            printnb(pet.getClass().getSimpleName() + " ");
+            petCount.count(pet);
+        }
+        print();
+        print(petCount);
+    }
+
     static class PetCounter
             extends LinkedHashMap<Class<? extends Pet>, Integer> {
         public PetCounter() {
@@ -41,16 +51,6 @@ public class PetCount3 {
             result.append("}");
             return result.toString();
         }
-    }
-
-    public static void main(String[] args) {
-        PetCounter petCount = new PetCounter();
-        for (Pet pet : Pets.createArray(20)) {
-            printnb(pet.getClass().getSimpleName() + " ");
-            petCount.count(pet);
-        }
-        print();
-        print(petCount);
     }
 } /* Output:
 Rat Manx Cymric Mutt Pug Cymric Pug Manx Cymric Rat EgyptianMau Hamster EgyptianMau Mutt Mutt Cymric Mouse Pug Mouse Cymric

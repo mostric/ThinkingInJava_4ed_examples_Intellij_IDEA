@@ -2,5 +2,5 @@
 package initialization; /* Added by Eclipse.py */
 
 public enum Spiciness {
-  NOT, MILD, MEDIUM, HOT, FLAMING
+    NOT, MILD, MEDIUM, HOT, FLAMING
 } ///:~

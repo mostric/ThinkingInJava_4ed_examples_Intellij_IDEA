@@ -111,7 +111,7 @@
         <!--Should BigEgg$Yolk be a _static_ inner class?-->
         <!--Should Egg$Yolk be a _static_ inner class?-->
     </Match>
-<!-------- Checked to here ------------------------------------------------->
+    <!-------- Checked to here ------------------------------------------------->
     <Match class="Equivalence">
         <BugCode name="RC"/>
         <!--Suspicious comparison of java.lang.Integer references in Equivalence.main(String[])  At Equivalence.java:[line 7]-->

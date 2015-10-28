@@ -2,21 +2,23 @@
 package io; /* Added by Eclipse.py */
 // Restoring the state of the pretend CAD system.
 // {RunFirst: StoreCADState}
-import java.io.*;
-import java.util.*;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.util.List;
 
 public class RecoverCADState {
-  @SuppressWarnings("unchecked")
-  public static void main(String[] args) throws Exception {
-    ObjectInputStream in = new ObjectInputStream(
-      new FileInputStream("CADState.out"));
-    // Read in the same order they were written:
-    List<Class<? extends Shape>> shapeTypes =
-      (List<Class<? extends Shape>>)in.readObject();
-    Line.deserializeStaticState(in);
-    List<Shape> shapes = (List<Shape>)in.readObject();
-    System.out.println(shapes);
-  }
+    @SuppressWarnings("unchecked")
+    public static void main(String[] args) throws Exception {
+        ObjectInputStream in = new ObjectInputStream(
+                new FileInputStream("CADState.out"));
+        // Read in the same order they were written:
+        List<Class<? extends Shape>> shapeTypes =
+                (List<Class<? extends Shape>>) in.readObject();
+        Line.deserializeStaticState(in);
+        List<Shape> shapes = (List<Shape>) in.readObject();
+        System.out.println(shapes);
+    }
 } /* Output:
 [class Circlecolor[1] xPos[58] yPos[55] dim[93]
 , class Squarecolor[0] xPos[61] yPos[61] dim[29]

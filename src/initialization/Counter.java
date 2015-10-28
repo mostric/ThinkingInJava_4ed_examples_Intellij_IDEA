@@ -1,7 +1,11 @@
 //: initialization/Counter.java
 package initialization; /* Added by Eclipse.py */
+
 public class Counter {
-  int i;
-  Counter() { i = 7; }
-  // ...
+    int i;
+
+    Counter() {
+        i = 7;
+    }
+    // ...
 } ///:~

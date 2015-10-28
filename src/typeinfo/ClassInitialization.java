@@ -1,7 +1,7 @@
 //: typeinfo/ClassInitialization.java
 package typeinfo; /* Added by Eclipse.py */
 
-import java.util.*;
+import java.util.Random;
 
 class Initable {
     static final int staticFinal = 47;

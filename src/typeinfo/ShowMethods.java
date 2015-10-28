@@ -4,10 +4,11 @@ package typeinfo; /* Added by Eclipse.py */
 // even if the methods are defined in the base class.
 // {Args: ShowMethods}
 
-import java.lang.reflect.*;
-import java.util.regex.*;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.util.regex.Pattern;
 
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 public class ShowMethods {
     private static String usage =

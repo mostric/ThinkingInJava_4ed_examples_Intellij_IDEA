@@ -1,30 +1,34 @@
 //: io/AvailableCharSets.java
 package io; /* Added by Eclipse.py */
 // Displays Charsets and aliases
-import java.nio.charset.*;
-import java.util.*;
-import static net.mindview.util.Print.*;
+
+import java.nio.charset.Charset;
+import java.util.Iterator;
+import java.util.SortedMap;
+
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public class AvailableCharSets {
-  public static void main(String[] args) {
-    SortedMap<String,Charset> charSets =
-      Charset.availableCharsets();
-    Iterator<String> it = charSets.keySet().iterator();
-    while(it.hasNext()) {
-      String csName = it.next();
-      printnb(csName);
-      Iterator aliases =
-        charSets.get(csName).aliases().iterator();
-      if(aliases.hasNext())
-        printnb(": ");
-      while(aliases.hasNext()) {
-        printnb(aliases.next());
-        if(aliases.hasNext())
-          printnb(", ");
-      }
-      print();
+    public static void main(String[] args) {
+        SortedMap<String, Charset> charSets =
+                Charset.availableCharsets();
+        Iterator<String> it = charSets.keySet().iterator();
+        while (it.hasNext()) {
+            String csName = it.next();
+            printnb(csName);
+            Iterator aliases =
+                    charSets.get(csName).aliases().iterator();
+            if (aliases.hasNext())
+                printnb(": ");
+            while (aliases.hasNext()) {
+                printnb(aliases.next());
+                if (aliases.hasNext())
+                    printnb(", ");
+            }
+            print();
+        }
     }
-  }
 } /* Output:
 Big5: csBig5
 Big5-HKSCS: big5-hkscs, big5hk, big5-hkscs:unicode3.0, big5hkscs, Big5_HKSCS
