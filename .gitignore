@@ -1,5 +1,6 @@
 #Untracked folders
 out
-
+.idea
 #Untracked files
 *.class
+.idea/workspace.xml
